@@ -160,9 +160,9 @@ namespace AchievementDependencyCreator
         {
             if (_currentDep != null)
             {
-                 listViewTargetDep.Items.Add((ListViewItem)_currentItemNewDep.Item.Clone());
-                 listViewCurrentDep.Items.RemoveAt(_currentItemNewDep.ItemIndex);
-                 _currentDep = null;
+                listViewCurrentDep.Items.RemoveAt(_currentDep.ItemIndex);
+                listViewTargetDep.Items.Add((ListViewItem)_currentDep.Item.Clone());
+                _currentDep = null;
             }
         }
 
