@@ -1,14 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunescapeNavigator.Core", "RunescapeNavigator.Core\RunescapeNavigator.Core.csproj", "{0BEF7F09-2D39-4F3F-9284-4B451E49E720}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunescapeNavigator.Core", "RunescapeNavigator.Core\RunescapeNavigator.Core.csproj", "{0BEF7F09-2D39-4F3F-9284-4B451E49E720}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunescapeNavigator.App", "RunescapeNavigator.App\RunescapeNavigator.App.csproj", "{9673A006-C680-46E1-A8DC-065194CA0F16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunescapeNavigator.App", "RunescapeNavigator.App\RunescapeNavigator.App.csproj", "{9673A006-C680-46E1-A8DC-065194CA0F16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunescapeNavigator.DOMParser", "RunescapeNavigator.DOMParser\RunescapeNavigator.DOMParser.csproj", "{12CEC9F1-2F32-4A7A-B5CF-A565A9EA09A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunescapeNavigator.DOMParser", "RunescapeNavigator.DOMParser\RunescapeNavigator.DOMParser.csproj", "{12CEC9F1-2F32-4A7A-B5CF-A565A9EA09A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunescapeNavigator.Data", "RunescapeNavigator.Data\RunescapeNavigator.Data.csproj", "{906B3B6E-A93F-4B9B-BF27-16353D7A2304}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunescapeNavigator.Data", "RunescapeNavigator.Data\RunescapeNavigator.Data.csproj", "{906B3B6E-A93F-4B9B-BF27-16353D7A2304}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunescapeNavigator.ConsoleTester", "RunescapeNavigator.ConsoleTester\RunescapeNavigator.ConsoleTester.csproj", "{87E32FD6-B483-4172-9F26-C8F329195EF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunescapeNavigator.ConsoleTester", "RunescapeNavigator.ConsoleTester\RunescapeNavigator.ConsoleTester.csproj", "{87E32FD6-B483-4172-9F26-C8F329195EF4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AchievementDependencyCreator", "AchievementDependencyCreator\AchievementDependencyCreator.csproj", "{94ADA5DA-8801-4F34-9C32-E25A284291CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +41,15 @@ Global
 		{87E32FD6-B483-4172-9F26-C8F329195EF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87E32FD6-B483-4172-9F26-C8F329195EF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87E32FD6-B483-4172-9F26-C8F329195EF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94ADA5DA-8801-4F34-9C32-E25A284291CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94ADA5DA-8801-4F34-9C32-E25A284291CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94ADA5DA-8801-4F34-9C32-E25A284291CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94ADA5DA-8801-4F34-9C32-E25A284291CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06DAFC08-3C2C-4F1F-8602-477EFF555D01}
 	EndGlobalSection
 EndGlobal

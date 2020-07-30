@@ -31,16 +31,18 @@ namespace RunescapeNavigator.DOMParser
                 {
                     continue;
                 }
-                
-                var ach = new Achievement();
-                ach.Name = StringHelpers.CleanString(tableRow[0]);
-                ach.Members = StringHelpers.CleanString(tableRow[1]);
-                ach.Description = StringHelpers.CleanString(tableRow[2]);
-                ach.Category = StringHelpers.CleanString(tableRow[3]);
-                ach.SubCategory = StringHelpers.CleanString(tableRow[4]);
-                ach.SubSubCategory = StringHelpers.CleanString(tableRow[5]);
-                ach.RuneScore = StringHelpers.CleanString(tableRow[6]);
-                
+
+                var ach = new Achievement
+                {
+                    Name = StringHelpers.CleanString(tableRow[0]),
+                    Members = StringHelpers.CleanString(tableRow[1]),
+                    Description = StringHelpers.CleanString(tableRow[2]),
+                    Category = StringHelpers.CleanString(tableRow[3]),
+                    SubCategory = StringHelpers.CleanString(tableRow[4]),
+                    SubSubCategory = StringHelpers.CleanString(tableRow[5]),
+                    RuneScore = StringHelpers.CleanString(tableRow[6])
+                };
+
                 achievements.Add(ach);
             }
 
