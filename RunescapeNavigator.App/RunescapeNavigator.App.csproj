@@ -20,7 +20,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="test.json">
+      <None Update="Resources\test.json">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </None>
     </ItemGroup>
