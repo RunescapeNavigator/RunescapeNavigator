@@ -4,9 +4,27 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RunescapeNavigator.App"
+        xmlns:VM="clr-namespace:RunescapeNavigator.App.ViewModels"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <VM:AchievementViewModel />
+    </Window.DataContext>
     <Grid>
-
+        <ListView ItemsSource="{Binding Achievements}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel HorizontalAlignment="Center" Margin="0 0 0 20px">
+                        <TextBlock Text="{Binding Name, StringFormat={}Name: {0}}" />
+                        <TextBlock Text="{Binding Members, StringFormat={}Members?: {0}}" />
+                        <TextBlock Text="{Binding Description, StringFormat={}Description: {0}}" />
+                        <TextBlock Text="{Binding Category, StringFormat={}Category: {0}}" />
+                        <TextBlock Text="{Binding SubCategory, StringFormat={}SubCategory: {0}}" />
+                        <TextBlock Text="{Binding SubSubCategory, StringFormat={}SubSubCategory: {0}}" />
+                        <TextBlock Text="{Binding RuneScore, StringFormat={}RuneScore: {0}}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Window>
